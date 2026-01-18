@@ -7,55 +7,71 @@
 body{
     margin:0;
     font-family:Arial,Helvetica,sans-serif;
-    background: rgb(13, 13, 13); /* #0d0d0d */
-    color: rgb(255, 255, 255); /* #fff */
+    background: rgb(13, 13, 13);
+    color: rgb(255, 255, 255);
 }
+
+/* Header */
 header{
-    background: linear-gradient(90deg, rgb(196, 0, 0), rgb(90, 0, 0)); /* #c40000 → #5a0000 */
+    background: linear-gradient(90deg, rgb(196, 0, 0), rgb(90, 0, 0));
     padding:35px;
     text-align:center;
 }
+
 header h1{
     margin:0;
     font-size:42px;
+    /* Yanıp sönen gri-kırmızı animasyonu */
+    animation: blinkHeader 1.2s infinite alternate;
 }
+
 header p{
     margin-top:10px;
     opacity:.9;
+    animation: blinkHeader 1.5s infinite alternate-reverse;
 }
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
-}
+
+/* Section başlıkları */
 h2{
-    color: rgb(255, 59, 59); /* #ff3b3b */
-    border-bottom:2px solid rgb(255, 59, 59); /* #ff3b3b */
+    color: rgb(255, 59, 59);
+    border-bottom:2px solid rgb(255, 59, 59);
     display:inline-block;
     padding-bottom:6px;
+    animation: blinkHeader 1s infinite alternate;
 }
+
+/* Kutular */
 .box{
-    background: rgb(22, 22, 22); /* #161616 */
+    background: rgb(22, 22, 22);
     padding:25px;
     border-radius:10px;
     margin-top:20px;
 }
+
+/* Liste */
 ul{
     line-height:1.9;
 }
+
+/* Uyarılar */
 .warning{
-    color: rgb(255, 85, 85); /* #ff5555 */
+    color: rgb(255, 85, 85);
     font-weight:bold;
+    animation: blinkWarning 0.8s infinite alternate;
 }
+
+/* Footer */
 footer{
-    background: rgb(8, 8, 8); /* #080808 */
+    background: rgb(8, 8, 8);
     text-align:center;
     padding:20px;
-    color: rgb(119, 119, 119); /* #777 */
+    color: rgb(119, 119, 119);
     font-size:14px;
 }
+
+/* Butonlar */
 button{
-    background-color: rgb(120, 144, 156); /* parlak gri-mavi */
+    background-color: rgb(120, 144, 156);
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
@@ -64,7 +80,20 @@ button{
     transition: 0.3s;
 }
 button:hover{
-    background-color: rgb(84, 110, 122); /* hover efekti */
+    background-color: rgb(84, 110, 122);
+}
+
+/* Animasyonlar */
+@keyframes blinkHeader {
+    0%   { color: rgb(180,180,180); }
+    50%  { color: rgb(255,0,0); }
+    100% { color: rgb(180,180,180); }
+}
+
+@keyframes blinkWarning {
+    0%   { color: rgb(255,85,85); }
+    50%  { color: rgb(255,0,0); }
+    100% { color: rgb(255,85,85); }
 }
 </style>
 </head>
