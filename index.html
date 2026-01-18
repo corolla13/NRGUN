@@ -7,11 +7,11 @@
 body{
     margin:0;
     font-family:Arial,Helvetica,sans-serif;
-    background:#0d0d0d;
-    color:#fff;
+    background: rgb(13, 13, 13); /* #0d0d0d */
+    color: rgb(255, 255, 255); /* #fff */
 }
 header{
-    background:linear-gradient(90deg,#c40000,#5a0000);
+    background: linear-gradient(90deg, rgb(196, 0, 0), rgb(90, 0, 0)); /* #c40000 → #5a0000 */
     padding:35px;
     text-align:center;
 }
@@ -29,13 +29,13 @@ section{
     padding:40px 20px;
 }
 h2{
-    color:#ff3b3b;
-    border-bottom:2px solid #ff3b3b;
+    color: rgb(255, 59, 59); /* #ff3b3b */
+    border-bottom:2px solid rgb(255, 59, 59); /* #ff3b3b */
     display:inline-block;
     padding-bottom:6px;
 }
 .box{
-    background:#161616;
+    background: rgb(22, 22, 22); /* #161616 */
     padding:25px;
     border-radius:10px;
     margin-top:20px;
@@ -44,15 +44,27 @@ ul{
     line-height:1.9;
 }
 .warning{
-    color:#ff5555;
+    color: rgb(255, 85, 85); /* #ff5555 */
     font-weight:bold;
 }
 footer{
-    background:#080808;
+    background: rgb(8, 8, 8); /* #080808 */
     text-align:center;
     padding:20px;
-    color:#777;
+    color: rgb(119, 119, 119); /* #777 */
     font-size:14px;
+}
+button{
+    background-color: rgb(120, 144, 156); /* parlak gri-mavi */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: rgb(84, 110, 122); /* hover efekti */
 }
 </style>
 </head>
@@ -163,5 +175,3 @@ Aksi takdirde <b>OTOLOSE</b> sayılır.
 
 </body>
 </html>
-
-
